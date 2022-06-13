@@ -7,7 +7,12 @@
     <title>Tercer Caso</title>
 </head>
 <body>
-    <h1>Cargando</h1>
+    <button onclick="window.location.href='http://127.0.0.1:8000';"class="raise">Inicio</button>
+
+    <form action="Consulta3R">
+        Ingrese un número y se mostraran los territorios donde el numero de dosis es mayor o igual al valor ingresado:<input type:"text" placeholder=" " name="dosis">
+        <input type="submit" value="Consultar">
+    </form>
     {{df|safe}} 
 </body>
 </html>

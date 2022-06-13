@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+STATICFILES_DIRS = [
+    "/Nueva carpeta/reto1/reto1/static"
+]
 
 # Application definition
 
@@ -54,7 +57,7 @@ ROOT_URLCONF = 'reto1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["D:/Documentos/ProyectosDjango/reto1/reto1/Plantillas"], #Aqui actualiza la ruta según la carpeta donde guarde el proyecto
+        'DIRS': ["C:/Users/carlo/Desktop/reto1/reto1/Plantillas"], #Aqui actualiza la ruta según la carpeta donde guarde el proyecto
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segundo Caso</title>
+    <title>Filtrado por código de territorio mayor a {{cod}}</title>
 </head>
 <body>
+    Filtrado por código de territorio mayor o igual a {{cod}}
     <button onclick="window.location.href='http://127.0.0.1:8000';"class="raise">Inicio</button>
-    <form action="Consulta2R">
-        Ingrese el codigo por el cual desea filtrar los iguales y mayores a este :<input type:"text" placeholder=" " name="codigo">
-        <input type="submit" value="Consultar">
-    </form>
-    {{df|safe}} 
+        {{df|safe}} 
 </body>
 </html>

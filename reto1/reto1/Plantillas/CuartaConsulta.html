@@ -7,7 +7,11 @@
     <title>Cuarto Caso</title>
 </head>
 <body>
-    <h1>Cargando</h1>
+    <button onclick="window.location.href='http://127.0.0.1:8000';"class="raise">Inicio</button>
+    <form action="Consulta4R">
+        Ingrese el año por el cual desea filtrar:<input type:"text" placeholder=" " name="año">
+        <input type="submit" value="Consultar">
+    </form>    
     {{df|safe}} 
 </body>
 </html>
