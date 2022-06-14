@@ -1,0 +1,104 @@
+.mystyle table {
+  border: 1px solid rgb(241, 17, 17);
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 60%;
+  table-layout: fixed;
+}
+
+.mystyle table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+.mystyle table tr {
+  background-color: #f31111;
+  border: 1px solid rgb(235, 20, 20);
+  padding: .35em;
+}
+
+.mystyle table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+.mystyle table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .mystyle table {
+    border: 0;
+  }
+
+  .mystyle table caption {
+    font-size: 1.3em;
+  }
+  
+  .mystyle table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  .mystyle table tr {
+    border-bottom: 3px solid rgb(255, 0, 0);
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  .mystyle table td {
+    border-bottom: 1px solid rgb(233, 28, 28);
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  .mystyle table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .mystyle table td:last-child {
+    border-bottom: 0;
+  }
+}
+/* general styling */
+.mystyle body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+.mystyle input{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font: 15px/1 'Open Sans', sans-serif;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  max-width: 500px;
+  background-color: rgb(224, 17, 17);
+  border: none;
+  padding: 10px 11px 11px 11px;
+  border-radius: 3px;
+  box-shadow: none;
+  outline: none;
+  margin: 0;
+  box-sizing: border-box; 
+}
